@@ -1,0 +1,30 @@
+from sys import exit 
+
+subject_1_percentage = float(input("subject 1: "))
+subject_2_percentage = float(input("subject 2: "))
+subject_3_percentage = float(input("subject 3: "))
+
+subjects_passed = 0
+if subject_1_percentage >= 70:
+   subjects_passed += 1
+if subject_2_percentage >= 70:
+   subjects_passed += 1
+if subject_3_percentage >= 70:
+   subjects_passed += 1
+   
+if subjects_passed < 2:
+    print("Fail")
+    exit()
+    
+total = 0
+total += subject_1_percentage
+total += subject_2_percentage
+total += subject_3_percentage
+
+percentage =total / 3 
+
+if percentage < 75:
+    print("Fail")
+    exit()
+
+print("Pass")    
