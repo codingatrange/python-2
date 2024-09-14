@@ -1,0 +1,9 @@
+a = [28, 36, 72, 12, 45, 18, 92]
+
+
+average = sum (a) / len (a)
+
+
+for number in a:
+    if number > average:
+        print(number)
